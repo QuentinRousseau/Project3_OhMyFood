@@ -1,10 +1,10 @@
 .pre-title {
-  border: 1px solid brown;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(246, 245, 245);
   padding-bottom: 30px;
+  margin: auto;
 
   &__map {
     gap: 16px;
