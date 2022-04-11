@@ -1,0 +1,8 @@
+@import url(base/_typography.scss);
+@import url(layout/_header.scss);
+@import url(layout/_footer.scss);
+
+header {
+  display: flex;
+  justify-content: center;
+}
