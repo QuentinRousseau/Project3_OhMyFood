@@ -5,11 +5,12 @@
   background: linear-gradient($colour-primary, $colour-secondary);
   border: none;
   border-radius: 30px;
+  box-shadow: 2px 2px 2px lightgray;
   color: white;
   width: 217px;
   height: 49px;
 }
 
 @mixin hover-link {
-  transform: matrix3d(1);
+  /*faire mixin pour le hover*/
 }

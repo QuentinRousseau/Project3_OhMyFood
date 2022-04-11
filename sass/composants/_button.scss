@@ -1,3 +1,4 @@
 .color-btn {
   @include btn;
+  @include hover-link;
 }

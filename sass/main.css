@@ -2,6 +2,21 @@
 /* import of base files */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: large;
+  font-weight: 700;
+  margin: 0%;
+}
+
+p {
+  margin: 0;
+  font-size: small;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -21,9 +36,12 @@ a:link {
   background: linear-gradient(#9356dc, #ff79da);
   border: none;
   border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 2px lightgray;
+          box-shadow: 2px 2px 2px lightgray;
   color: white;
   width: 217px;
   height: 49px;
+  /*faire mixin pour le hover*/
 }
 
 /* import of layout files */
@@ -34,6 +52,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
+}
+
+header img {
+  height: 28px;
+  width: 165px;
 }
 
 /* import of page files */
@@ -46,17 +70,45 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f5f5;
+  padding-bottom: 30px;
+}
+
+.pre-title__map {
+  gap: 16px;
+  width: 100%;
+  background-color: #e7e5e5;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.pre-title__map {
-  gap: 30px;
-  width: 100%;
-  background-color: lightgrey;
+.pre-title i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pre-title__title {
+  padding: 20px 0;
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
