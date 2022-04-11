@@ -1,8 +1,24 @@
-@import url(base/_typography.scss);
-@import url(layout/_header.scss);
-@import url(layout/_footer.scss);
+/* import of utils files */
 
-header {
-  display: flex;
-  justify-content: center;
-}
+@import "utils/variables";
+@import "utils/%placeholders";
+@import "utils/functions";
+@import "utils/mixins";
+
+/* import of base files */
+
+@import "base/typography";
+@import "base/link";
+
+/* import of components files */
+
+@import "composants/button";
+
+/* import of layout files */
+
+@import "layout/header";
+@import "layout/footer";
+
+/* import of page files */
+
+@import "pages/homepage";

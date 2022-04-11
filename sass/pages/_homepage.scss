@@ -1,0 +1,13 @@
+.pre-title {
+  border: 1px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__map {
+    gap: 30px;
+    width: 100%;
+    background-color: lightgrey;
+  }
+}

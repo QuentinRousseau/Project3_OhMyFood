@@ -1,0 +1,15 @@
+@mixin btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient($colour-primary, $colour-secondary);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  width: 217px;
+  height: 49px;
+}
+
+@mixin hover-link {
+  transform: matrix3d(1);
+}

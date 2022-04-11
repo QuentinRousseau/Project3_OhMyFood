@@ -1,6 +1,32 @@
-@import url(base/_typography.scss);
-@import url(layout/_header.scss);
-@import url(layout/_footer.scss);
+/* import of utils files */
+/* import of base files */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+a:link {
+  text-decoration: none;
+}
+
+/* import of components files */
+.color-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  width: 217px;
+  height: 49px;
+}
+
+/* import of layout files */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,5 +34,29 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* import of page files */
+.pre-title {
+  border: 1px solid brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pre-title__map {
+  gap: 30px;
+  width: 100%;
+  background-color: lightgrey;
 }
 /*# sourceMappingURL=main.css.map */
