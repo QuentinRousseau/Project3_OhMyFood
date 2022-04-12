@@ -1,4 +1,6 @@
 .color-btn {
   @include btn;
-  @include hover-link;
+  /*& :hover {
+    @include hover-link;
+  }*/
 }

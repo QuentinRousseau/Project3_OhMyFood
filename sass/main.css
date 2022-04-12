@@ -1,16 +1,14 @@
 /* import of utils files */
 /* import of base files */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 body {
-  margin: 0;
-  min-width: 240px;
+  font-family: "Roboto";
+  min-width: 220px;
 }
 
-h1 {
-  font-size: large;
-  font-weight: 700;
-  margin: 0%;
+h2 {
+  font-weight: 900;
 }
 
 p {
@@ -42,7 +40,10 @@ a:link {
   color: white;
   width: 217px;
   height: 49px;
-  /*faire mixin pour le hover*/
+  padding: 20px;
+  /*& :hover {
+    @include hover-link;
+  }*/
 }
 
 /* import of layout files */
@@ -75,7 +76,6 @@ header img {
           align-items: center;
   background-color: #f6f5f5;
   padding-bottom: 30px;
-  margin: auto;
 }
 
 .pre-title__map {
@@ -94,7 +94,7 @@ header img {
 }
 
 .pre-title__title {
-  padding: 20px 0;
+  padding: 30px;
   gap: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
