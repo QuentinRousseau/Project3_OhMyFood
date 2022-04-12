@@ -1,26 +1,6 @@
 /* import of utils files */
-/* import of base files */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-body {
-  font-family: "Roboto";
-  min-width: 220px;
-}
-
-h2 {
-  font-weight: 900;
-}
-
-p {
-  margin: 0;
-  font-size: small;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-/* import of components files */
 .color-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,11 +21,41 @@ a:link {
   width: 217px;
   height: 49px;
   padding: 20px;
-  /*& :hover {
-    @include hover-link;
-  }*/
 }
 
+.operationli {
+  gap: 30px;
+  width: 80%;
+  border: 1px solid red;
+  border-radius: 20px;
+  height: 25px;
+}
+
+.operationli::marker {
+  padding: none;
+}
+
+/* import of base files */
+body {
+  font-family: "Roboto";
+  min-width: 220px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+p {
+  margin: 0;
+  font-size: small;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* import of components files */
 /* import of layout files */
 header {
   display: -webkit-box;
@@ -124,10 +134,5 @@ header img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 20px;
-}
-
-.operation__list {
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
 }
 /*# sourceMappingURL=main.css.map */

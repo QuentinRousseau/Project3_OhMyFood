@@ -1,15 +1,4 @@
 @mixin btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient($colour-primary, $colour-secondary);
-  border: none;
-  border-radius: 30px;
-  box-shadow: 2px 2px 2px lightgray;
-  color: white;
-  width: 217px;
-  height: 49px;
-  padding: 20px;
 }
 
 @mixin hover-link {

@@ -1,6 +1,3 @@
 .color-btn {
-  @include btn;
-  /*& :hover {
-    @include hover-link;
-  }*/
+  @extend %btn;
 }
