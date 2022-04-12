@@ -63,6 +63,7 @@ header img {
 }
 
 /* import of page files */
+/* map, pre-title & principal btn */
 .pre-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,5 +112,22 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* operation list, icons & title*/
+.operation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.operation__list {
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
 }
 /*# sourceMappingURL=main.css.map */

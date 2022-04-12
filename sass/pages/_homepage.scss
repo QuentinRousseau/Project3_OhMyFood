@@ -1,3 +1,5 @@
+/* map, pre-title & principal btn */
+
 .pre-title {
   display: flex;
   flex-direction: column;
@@ -22,5 +24,16 @@
     align-self: center;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* operation list, icons & title*/
+
+.operation {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  &__list {
+    column-gap: 25px;
   }
 }
