@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="uft-8" />
+    <meta name="viewport" content="device-width, initial-scale=1" />
+
+    <script
+      src="https://kit.fontawesome.com/99564c639a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="/sass/main.css" />
+    <link rel="stylesheet" href="sass/normalize.css" />
+
+    <title>Project 3: OMyFood</title>
+
+  </head>
+
+  <body>
+    <header>
+      <img src="../Docs/images/logo/ohmyfood.png" alt="Logo_Omyfood" />
+    </header>
+
+    <section class="pre-title">
+      <header class="pre-title__map">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Paris, Belleville</p>
+      </header>
+      <main class="pre-title__title">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception, séléctionés par nos soins.</p>
+      </main>
+      <a href="#">
+        <button class="color-btn">Explorer nos restaurants</button>
+      </a>
+    </section>
+
+    <section class="operation">
+      <h2>Fonctionnement</h2>
+      <ol class="operation__list">
+        <li class="__list --empl1">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>Choisissez un restaurant</span>
+        </li>
+
+        <li class="__list --empl2">
+          <i class="fa-solid fa-list-ul"></i>
+          <span>Composez votre menu</span>
+        </li>
+
+        <li class="__list --empl3">
+          <i class="fa-solid fa-store"></i>
+          <span>Dégustez au restaurant</span>
+        </li>
+      </ol>
+    </section>
+
+    <section></section>
+
+    <footer></footer>
+
+  </body>
+</html>
