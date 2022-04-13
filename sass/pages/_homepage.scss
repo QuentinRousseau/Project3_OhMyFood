@@ -30,10 +30,25 @@
 /* operation list, icons & title*/
 
 .operation {
+  &__list {
+    @extend %list;
+  }
+}
+
+.restaurants {
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  &li {
-    @extend %list;
+  &__card {
+    border: 1px solid lightblue;
+    flex-grow: 1;
+    width: 200px;
+    height: 200px;
+  }
+}
+.card-img {
+  height: 120px;
+  width: 120px;
+  img {
+    @extend %img;
   }
 }

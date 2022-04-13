@@ -13,9 +13,14 @@
 }
 
 %list {
-  gap: 30px;
-  width: 80%;
+  width: 90%;
   border: 1px solid red;
   border-radius: 20px;
+  box-shadow: 2px 2px 2px lightgray;
   height: 25px;
+  justify-self: center;
+}
+%img {
+  height: 120px;
+  width: 160px;
 }
