@@ -30,8 +30,20 @@
 /* operation list, icons & title*/
 
 .operation {
+  counter-reset: number;
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
   &__list {
-    @extend %list;
+    @extend %operation-list;
+    &::before {
+      @extend %counter-number-style;
+      counter-increment: number;
+      content: "" counter(number);
+      /*.operation--3 {
+        background-color: lighter(colour-primary, 10%);
+      }*/
+    }
   }
 }
 
