@@ -12,6 +12,8 @@
   padding: 20px;
 }
 
+//premiere section
+
 %operation-list {
   display: flex;
   justify-self: center;
@@ -19,7 +21,6 @@
   align-items: center;
   width: 90%;
   background-color: rgb(243, 243, 243);
-
   border-radius: 20px;
   box-shadow: 2px 2px 8px lightgrey;
   height: 75px;
@@ -40,8 +41,17 @@
   left: -1rem;
   border-radius: 50%;
 }
+//deuxieme section, les restaurants
 
 %img {
   height: 120px;
-  width: 160px;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+%restaurants-cards {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid lightblue;
+  border-radius: 12px;
+  width: 200px;
 }

@@ -47,19 +47,19 @@
   }
 }
 
+// restaurant's list
+
 .restaurants {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
   &__card {
-    border: 1px solid lightblue;
-    flex-grow: 1;
-    width: 200px;
-    height: 200px;
+    @extend %restaurants-cards;
   }
 }
 .card-img {
-  height: 120px;
-  width: 120px;
+  width: 100%;
   img {
     @extend %img;
   }
