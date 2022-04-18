@@ -5,10 +5,15 @@ body {
   font-family: "Roboto";
   min-width: 220px;
   text-align: center;
+  width: 100%;
 }
 
 h2 {
-  font-weight: 900;
+  @extend %placement-title;
+}
+h3 {
+  margin: 4px 0px;
+  font-size: medium;
 }
 
 p {

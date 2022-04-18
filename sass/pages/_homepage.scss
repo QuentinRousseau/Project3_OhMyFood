@@ -40,10 +40,13 @@
       @extend %counter-number-style;
       counter-increment: number;
       content: "" counter(number);
-      /*.operation--3 {
+      /*&--3 {
         background-color: lighter(colour-primary, 10%);
       }*/
     }
+  }
+  span {
+    width: 176px;
   }
 }
 
@@ -54,13 +57,24 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  margin-bottom: 16px;
   &__card {
     @extend %restaurants-cards;
   }
-}
-.card-img {
-  width: 100%;
-  img {
-    @extend %img;
+
+  .card-img {
+    width: 100%;
+    img {
+      @extend %img;
+    }
+  }
+  .card-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    .icons {
+      @extend %card-title;
+    }
   }
 }

@@ -1,6 +1,15 @@
 /* import of utils files */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+h2 {
+  width: 100%;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-start;
+}
+
 .color-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,8 +75,8 @@
   border-radius: 50%;
 }
 
-.card-img img {
-  height: 120px;
+.restaurants .card-img img {
+  height: 173px;
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
@@ -78,9 +87,22 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid lightblue;
+  -webkit-box-shadow: 2px 2px 8px lightgrey;
+          box-shadow: 2px 2px 8px lightgrey;
   border-radius: 12px;
-  width: 200px;
+  width: 334px;
+}
+
+.restaurants .card-title .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* import of base files */
@@ -88,10 +110,12 @@ body {
   font-family: "Roboto";
   min-width: 220px;
   text-align: center;
+  width: 100%;
 }
 
-h2 {
-  font-weight: 900;
+h3 {
+  margin: 4px 0px;
+  font-size: medium;
 }
 
 p {
@@ -106,6 +130,11 @@ img {
 
 a:link {
   text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 /* import of components files */
@@ -123,6 +152,57 @@ header {
 header img {
   height: 28px;
   width: 165px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 16px;
+  text-align: start;
+  background-color: grey;
+  color: white;
+}
+
+footer .footer__logo {
+  margin: 12px 0px;
+}
+
+footer .footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+footer .footer__list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  width: 190px;
+  height: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer img {
+  padding: 2px;
+  height: 17px;
+  width: 100px;
+  -webkit-filter: brightness(20);
+          filter: brightness(20);
 }
 
 /* import of page files */
@@ -189,9 +269,13 @@ header img {
 .operation__list::before {
   counter-increment: number;
   content: "" counter(number);
-  /*.operation--3 {
+  /*&--3 {
         background-color: lighter(colour-primary, 10%);
       }*/
+}
+
+.operation span {
+  width: 176px;
 }
 
 .restaurants {
@@ -204,9 +288,21 @@ header img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 15px;
+  margin-bottom: 16px;
 }
 
-.card-img {
+.restaurants .card-img {
   width: 100%;
+}
+
+.restaurants .card-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 12px;
 }
 /*# sourceMappingURL=main.css.map */

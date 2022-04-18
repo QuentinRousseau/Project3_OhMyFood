@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 16px;
+  text-align: start;
+  background-color: grey;
+  color: white;
+  .footer__logo {
+    margin: 12px 0px;
+  }
+  .footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    .list {
+      display: flex;
+      gap: 8px;
+      width: 190px;
+      height: 25px;
+      align-items: center;
+    }
+  }
+  & img {
+    padding: 2px;
+    height: 17px;
+    width: 100px;
+    filter: brightness(20);
+  }
+}
