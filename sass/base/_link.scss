@@ -1,7 +1,10 @@
-a:link {
-  text-decoration: none;
-  color: black;
-}
-a:visited {
-  color: black;
+a {
+  height: 100%;
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
 }

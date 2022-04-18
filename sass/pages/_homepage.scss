@@ -40,9 +40,9 @@
       @extend %counter-number-style;
       counter-increment: number;
       content: "" counter(number);
-      &--3 {
+      /*&--3 {
         background-color: lightness(colour-primary, 10%);
-      }
+      }*/
     }
   }
   span {

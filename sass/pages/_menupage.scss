@@ -1,0 +1,16 @@
+.menu-header {
+  justify-content: flex-start;
+  & span + img {
+    width: 50%;
+    flex-grow: 1;
+  }
+}
+.pre-title {
+  &__img {
+    height: 270px;
+    width: 375px;
+  }
+  img {
+    width: 375px;
+  }
+}

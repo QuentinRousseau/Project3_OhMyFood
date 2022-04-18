@@ -128,16 +128,26 @@ img {
      object-fit: cover;
 }
 
-a:link {
+a {
+  height: 100%;
+}
+
+a a:link {
   text-decoration: none;
   color: black;
 }
 
-a:visited {
+a a:visited {
   color: black;
 }
 
 /* import of components files */
+.color-btn {
+  /*&:hover {
+    background-color: lightness($colour-btn);
+  }*/
+}
+
 /* import of layout files */
 header {
   display: -webkit-box;
@@ -270,7 +280,7 @@ footer img {
   counter-increment: number;
   content: "" counter(number);
   /*&--3 {
-        background-color: lighter(colour-primary, 10%);
+        background-color: lightness(colour-primary, 10%);
       }*/
 }
 
@@ -304,5 +314,27 @@ footer img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 8px 12px;
+}
+
+.menu-header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.menu-header span + img {
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.pre-title__img {
+  height: 270px;
+  width: 375px;
+}
+
+.pre-title img {
+  width: 375px;
 }
 /*# sourceMappingURL=main.css.map */
