@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient($colour-primary, $colour-secondary);
+  background: $colour-btn;
   border: none;
   border-radius: 30px;
   box-shadow: 2px 2px 2px lightgray;
