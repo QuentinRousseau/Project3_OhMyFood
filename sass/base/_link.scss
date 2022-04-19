@@ -1,10 +1,10 @@
 a {
   height: 100%;
-  a:link {
+  &:link {
     text-decoration: none;
     color: black;
   }
-  a:visited {
+  &:visited {
     color: black;
   }
 }
