@@ -6,6 +6,7 @@
 }
 
 %btn {
+  font-size: small;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +17,11 @@
   color: white;
   width: 217px;
   height: 49px;
-  padding: 20px;
+  &:hover {
+    background: $colour-btn-light;
+    transform: scale(1.1);
+    transition: 300ms;
+  }
 }
 
 //premiere section
