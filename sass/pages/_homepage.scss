@@ -33,13 +33,13 @@
   margin-bottom: 40px;
   &__list {
     @extend %operation-list;
+    &--3 {
+      background-color: lighten($colour-primary, 35%);
+    }
     &::before {
       @extend %counter-number-style;
       counter-increment: number;
       content: "" counter(number);
-      /*&--3 {
-        background-color: lightness(colour-primary, 10%);
-      }*/
     }
   }
   span {

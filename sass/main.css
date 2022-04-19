@@ -9,6 +9,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   justify-self: flex-start;
+  margin-left: 8px;
 }
 
 .color-btn {
@@ -133,6 +134,7 @@ body {
   min-width: 220px;
   text-align: center;
   width: 100%;
+  margin: 0;
 }
 
 h3 {
@@ -141,6 +143,7 @@ h3 {
 }
 
 p {
+  text-align: start;
   margin: 0;
   font-size: small;
 }
@@ -284,12 +287,13 @@ footer img {
   margin-bottom: 40px;
 }
 
+.operation__list--3 {
+  background-color: #f2eafb;
+}
+
 .operation__list::before {
   counter-increment: number;
   content: "" counter(number);
-  /*&--3 {
-        background-color: lightness(colour-primary, 10%);
-      }*/
 }
 
 .operation span {
