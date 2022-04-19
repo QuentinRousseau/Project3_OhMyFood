@@ -377,13 +377,13 @@ footer img {
 }
 
 .pre-title__img {
-  height: 280px;
+  height: 250px;
   width: 100%;
 }
 
 .pre-title__img img {
   width: 100%;
-  height: 280px;
+  height: 275px;
 }
 
 .menu {
@@ -396,10 +396,9 @@ footer img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  top: -20px;
   border-radius: 20px 20px 0 0;
   background-color: #efeded;
-  padding: 12px;
+  padding: 20px 12px;
 }
 
 .menu__pre-title {
