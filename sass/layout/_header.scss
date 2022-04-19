@@ -1,9 +1,14 @@
 header {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 10px 0;
   & img {
-    height: 28px;
     width: 165px;
+  }
+  & span {
+    position: absolute;
+    left: 5px;
+    top: 17px;
   }
 }

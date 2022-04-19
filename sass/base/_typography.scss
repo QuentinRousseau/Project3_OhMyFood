@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: "Shrikhand";
+}
+
 h2 {
   @extend %placement-title;
 }
