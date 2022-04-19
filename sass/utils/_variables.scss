@@ -3,6 +3,6 @@ $colour-secondary: #ff79da;
 $colour-tertiary: #99e2d0;
 $colour-btn: linear-gradient($colour-primary, $colour-secondary);
 $colour-btn-light: linear-gradient(
-  lightness($colour-primary, 10%),
-  lightness($colour-secondary, 10%)
+  lighten($colour-primary, 10%),
+  lighten($colour-secondary, 10%)
 );

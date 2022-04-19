@@ -12,6 +12,7 @@ h2 {
 }
 
 .color-btn {
+  font-size: small;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +102,17 @@ h2 {
           box-shadow: 2px 2px 8px lightgrey;
   border-radius: 12px;
   width: 334px;
+}
+
+.restaurants .card-img .new-restaurant {
+  height: 40px;
+  width: 100px;
+  position: relative;
+  background: #99e2d0;
+  top: -165px;
+  left: 120px;
+  padding: 4px;
+  color: #32b091;
 }
 
 .restaurants .card-title .icons {
@@ -299,6 +311,7 @@ footer img {
 
 .restaurants .card-img {
   width: 100%;
+  height: 175px;
 }
 
 .restaurants .card-title {

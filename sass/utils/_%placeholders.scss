@@ -68,6 +68,16 @@
   border-radius: 12px;
   width: 334px;
 }
+%new-card {
+  height: 40px;
+  width: 100px;
+  position: relative;
+  background: $colour-tertiary;
+  top: -165px;
+  left: 120px;
+  padding: 4px;
+  color: darken($colour-tertiary, 30);
+}
 %card-title {
   display: flex;
   justify-content: space-between;
