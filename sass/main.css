@@ -13,10 +13,10 @@ h2 {
 }
 
 .color-btn {
-  font-size: small;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: small;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -30,6 +30,9 @@ h2 {
   -webkit-box-shadow: 2px 2px 2px lightgray;
           box-shadow: 2px 2px 2px lightgray;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
   width: 217px;
   height: 49px;
 }
@@ -246,6 +249,38 @@ footer img {
           filter: brightness(20);
 }
 
+.menu__card {
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 2px lightgray;
+          box-shadow: 1px 1px 2px lightgray;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px;
+  text-align: start;
+}
+
+.menu__card .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* import of page files */
 /* map, pre-title & principal btn */
 .pre-title {
@@ -355,12 +390,16 @@ footer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
   top: -20px;
   border-radius: 20px 20px 0 0;
   background-color: #efeded;
+  padding: 12px;
 }
 
 .menu__pre-title {
@@ -373,5 +412,50 @@ footer img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+.menu__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__part__title {
+  margin: 16px 0;
+  width: 40px;
+  border-bottom: 4px solid #99e2d0;
+}
+
+.menu__part__title h2 {
+  margin: 8px 0;
+}
+
+.menu__part__card {
+  margin: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .color-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

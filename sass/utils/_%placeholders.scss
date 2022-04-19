@@ -1,3 +1,4 @@
+//placeholder for typo
 %placement-title {
   width: 100%;
   font-weight: 900;
@@ -6,9 +7,11 @@
   margin-left: 8px;
 }
 
+// pre-title (homepage)
+
 %btn {
-  font-size: small;
   display: flex;
+  font-size: small;
   justify-content: center;
   align-items: center;
   background: $colour-btn;
@@ -16,6 +19,9 @@
   border-radius: 30px;
   box-shadow: 2px 2px 2px lightgray;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
   width: 217px;
   height: 49px;
   &:hover {
@@ -25,7 +31,7 @@
   }
 }
 
-//premiere section
+//first section (homepage)
 
 %operation-list {
   font-weight: 800;
@@ -55,7 +61,7 @@
   left: -4.2rem;
   border-radius: 50%;
 }
-//deuxieme section, les restaurants
+//second section, les restaurants (homepage)
 
 %img {
   height: 173px;
@@ -83,4 +89,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+// first section (menupage)
+
+%menu-part-title {
+  font-weight: lighter;
+  border-bottom: 3px solid $colour-tertiary;
 }
