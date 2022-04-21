@@ -9,6 +9,9 @@ footer {
   .footer__logo {
     margin: 12px 0px;
   }
+  a:link {
+    color: white;
+  }
   .footer__list {
     display: flex;
     flex-wrap: wrap;
