@@ -185,7 +185,6 @@ a:visited {
   -webkit-background-clip: text;
   color: transparent;
   position: absolute;
-  top: 35px;
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;

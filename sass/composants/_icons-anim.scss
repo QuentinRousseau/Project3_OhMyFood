@@ -9,7 +9,6 @@
     align-self: center;
     justify-content: center;
   }
-
   height: 60px;
   display: flex;
   justify-content: center;
@@ -20,7 +19,7 @@
   -webkit-background-clip: text;
   color: transparent;
   position: absolute;
-  top: 35px;
+
   opacity: 0;
   transition: 1s;
   &:hover {
