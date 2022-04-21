@@ -1,0 +1,29 @@
+.icons {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.icons--pink {
+  i {
+    align-self: center;
+    justify-content: center;
+  }
+
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $colour-btn;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  top: 35px;
+  opacity: 0;
+  transition: 1s;
+  &:hover {
+    opacity: 1;
+  }
+}
