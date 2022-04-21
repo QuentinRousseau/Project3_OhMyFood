@@ -4,17 +4,15 @@ footer {
   justify-content: flex-start;
   padding: 24px 12px;
   text-align: start;
-  background-color: grey;
+  background-color: dimgray;
   color: white;
   .footer__logo {
     margin: 12px 0px;
   }
-  a:link {
-    color: white;
-  }
+
   .footer__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
     width: 100%;
     .list {

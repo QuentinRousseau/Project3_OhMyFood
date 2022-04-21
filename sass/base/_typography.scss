@@ -14,7 +14,11 @@ h1 {
 }
 
 h2 {
-  @extend %placement-title;
+  width: 100%;
+  font-weight: 900;
+  display: flex;
+  justify-self: flex-start;
+  margin-left: 8px;
 }
 h3 {
   margin: 4px 0px;
