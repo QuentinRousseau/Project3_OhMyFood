@@ -16,6 +16,7 @@
     background-color: darken($colour-background-menu, 10);
     align-items: center;
     font-weight: 600;
+    box-shadow: inset 0 4px 4px -4px grey;
   }
   & i {
     align-self: center;
