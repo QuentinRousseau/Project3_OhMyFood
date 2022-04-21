@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   width: 332px;
-  background-color: rgb(243, 243, 243);
+  background-color: $colour-background-menu;
   border-radius: 20px;
   box-shadow: 2px 2px 8px lightgrey;
   height: 75px;
@@ -28,5 +28,3 @@
   left: -4.2rem;
   border-radius: 50%;
 }
-
-// first section (menupage)

@@ -15,7 +15,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 332px;
-  background-color: #f3f3f3;
+  background-color: #f8f8f8;
   border-radius: 20px;
   -webkit-box-shadow: 2px 2px 8px lightgrey;
           box-shadow: 2px 2px 8px lightgrey;
@@ -145,6 +145,9 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 0;
+  margin-top: 50px;
+  -webkit-box-shadow: 0 4px 2px -2px gray;
+          box-shadow: 0 4px 2px -2px gray;
 }
 
 header img {
@@ -224,14 +227,21 @@ footer img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f6f5f5;
+  background-color: #f8f8f8;
   padding-bottom: 30px;
 }
 
 .pre-title__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 16px;
+  height: 50px;
   width: 100%;
-  background-color: #e7e5e5;
+  background-color: #dfdfdf;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -373,7 +383,7 @@ footer img {
       flex-wrap: wrap;
   position: relative;
   border-radius: 20px 20px 0 0;
-  background-color: #efeded;
+  background-color: #f8f8f8;
   padding: 20px 12px;
 }
 
@@ -439,6 +449,8 @@ footer img {
 }
 
 .menu__part__card .card {
+  -webkit-box-shadow: 2px 2px 8px lightgrey;
+          box-shadow: 2px 2px 8px lightgrey;
   margin: 8px 0;
   padding: 12px;
   display: -webkit-box;

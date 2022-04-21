@@ -1,6 +1,8 @@
 $colour-primary: #9356dc;
 $colour-secondary: #ff79da;
 $colour-tertiary: #99e2d0;
+$colour-background-menu: rgb(248, 248, 248);
+$colour-background-footer: dimgray;
 $colour-btn: linear-gradient($colour-primary, $colour-secondary);
 $colour-btn-light: linear-gradient(
   lighten($colour-primary, 10%),
