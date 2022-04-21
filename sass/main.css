@@ -131,6 +131,28 @@ a:visited {
           transform: scale(1.1);
   -webkit-transition: 300ms;
   transition: 300ms;
+  -webkit-box-shadow: 2px 2px 8px black;
+          box-shadow: 2px 2px 8px black;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 330px;
+  border-radius: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 2px lightgrey;
+          box-shadow: 0px 0px 2px lightgrey;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  -webkit-box-shadow: 0px 0px 11px lightgray;
+          box-shadow: 0px 0px 11px lightgray;
 }
 
 /* import of layout files */
@@ -155,7 +177,7 @@ header span {
   color: black;
   position: absolute;
   left: 12px;
-  top: 17px;
+  top: 27px;
 }
 
 footer {
@@ -305,15 +327,8 @@ footer img {
 }
 
 .restaurants .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 2px 2px 8px lightgrey;
-          box-shadow: 2px 2px 8px lightgrey;
-  border-radius: 12px;
-  width: 334px;
 }
 
 .restaurants .card-img {
@@ -402,11 +417,11 @@ footer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -419,9 +434,6 @@ footer img {
 }
 
 .menu__part__title {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   margin: 16px 0;
   width: 40px;
   border-bottom: 4px solid #99e2d0;
@@ -448,21 +460,13 @@ footer img {
 }
 
 .menu__part__card .card {
-  -webkit-box-shadow: 2px 2px 8px lightgrey;
-          box-shadow: 2px 2px 8px lightgrey;
   margin: 8px 0;
   padding: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
-  width: 330px;
-  border-radius: 20px;
-  background: white;
+  gap: 10px;
 }
 
 .menu__part__card .subtitle {
@@ -479,7 +483,7 @@ footer img {
 }
 
 .subsection {
-  background: #efeded;
+  background: #f8f8f8;
   width: 100%;
   margin: 30px;
 }

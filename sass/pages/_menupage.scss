@@ -25,8 +25,8 @@
   }
   &__part {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
     &--1 + --2 + --3 {
       width: 230px;
@@ -36,7 +36,7 @@
       h2 {
         margin: 8px 0;
       }
-      justify-content: flex-start;
+
       margin: 16px 0;
       width: 40px;
       border-bottom: 4px solid $colour-tertiary;
@@ -50,15 +50,10 @@
       gap: 15px;
 
       .card {
-        box-shadow: 2px 2px 8px lightgrey;
         margin: 8px 0;
         padding: 12px;
-        display: flex;
         flex-direction: column;
-        gap: 20px;
-        width: 330px;
-        border-radius: 20px;
-        background: white;
+        gap: 10px;
       }
       .subtitle {
         display: flex;
@@ -70,7 +65,7 @@
   }
 }
 .subsection {
-  background: rgb(239, 237, 237);
+  background: $colour-background-menu;
   width: 100%;
   margin: 30px;
   .color-btn {
