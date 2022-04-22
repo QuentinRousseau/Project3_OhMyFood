@@ -3,26 +3,36 @@
   align-items: center;
   justify-content: center;
   display: flex;
-}
-.icons--pink {
-  i {
-    align-self: center;
+
+  &__pink {
+    i {
+      align-self: center;
+      justify-content: center;
+    }
+    height: 27px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+
+    // color linear-gradient text:
+
+    background: $colour-btn;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+
+    //animation:
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0% 100%;
+    transition: 1s;
+    transition-timing-function: linear;
   }
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: $colour-btn;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  position: absolute;
-
-  opacity: 0;
-  transition: 1s;
   &:hover {
-    opacity: 1;
+    .icons__pink {
+      transform: scaleY(1);
+      opacity: 1;
+    }
   }
 }
