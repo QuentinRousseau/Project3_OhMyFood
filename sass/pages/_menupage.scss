@@ -52,15 +52,33 @@
 
       .card {
         margin: 8px 0;
-        padding: 12px;
-        flex-direction: column;
+
         gap: 10px;
-      }
-      .subtitle {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
+        &__title {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin: 10px;
+        }
+        .check {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $colour-tertiary;
+          width: 33%;
+          height: 75px;
+          padding: 0;
+          position: relative;
+          right: -12px;
+          border-radius: 0 20px 20px 0;
+          color: $colour-background-menu;
+        }
+        .subtitle {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+        }
       }
     }
   }
