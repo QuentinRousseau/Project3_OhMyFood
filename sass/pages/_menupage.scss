@@ -52,32 +52,33 @@
 
       .card {
         margin: 8px 0;
+        overflow: hidden;
 
-        gap: 10px;
         &__title {
           display: flex;
           flex-direction: column;
-          width: 100%;
           margin: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%;
         }
-        .check {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: $colour-tertiary;
-          width: 33%;
-          height: 75px;
-          padding: 0;
-          position: relative;
-          right: -12px;
-          border-radius: 0 20px 20px 0;
-          color: $colour-background-menu;
-        }
+
         .subtitle {
           display: flex;
-          width: 100%;
           justify-content: space-between;
           align-items: center;
+          overflow: hidden;
+
+          span {
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+        &:hover {
+          .check {
+            animation: check-anim 500ms;
+            width: 75px;
+          }
         }
       }
     }

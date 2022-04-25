@@ -1,0 +1,35 @@
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $colour-tertiary;
+  width: 0%;
+  height: 75px;
+  padding: 0;
+  position: relative;
+  border-radius: 0 20px 20px 0;
+  color: $colour-background-menu;
+  overflow: hidden;
+  transform-origin: 100% 0%;
+  transition: 500ms;
+}
+@keyframes icon-anim {
+  0% {
+  }
+}
+@keyframes check-anim {
+  0% {
+    transform: scaleX(0);
+    width: 0%;
+  }
+
+  50% {
+    transform: scaleX(0.5);
+    width: 37px;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+    width: 75px;
+  }
+}
