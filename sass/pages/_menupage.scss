@@ -78,6 +78,9 @@
           .check {
             animation: check-anim 500ms;
             width: 75px;
+            i {
+              animation: icon-anim 600ms normal;
+            }
           }
         }
       }

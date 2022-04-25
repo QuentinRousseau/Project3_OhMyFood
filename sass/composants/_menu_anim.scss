@@ -14,7 +14,11 @@
   transition: 500ms;
 }
 @keyframes icon-anim {
-  0% {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
 @keyframes check-anim {

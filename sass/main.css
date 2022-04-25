@@ -236,12 +236,24 @@ a:visited {
 }
 
 @-webkit-keyframes icon-anim {
-  0% {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
 @keyframes icon-anim {
-  0% {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
@@ -622,6 +634,11 @@ footer img {
   -webkit-animation: check-anim 500ms;
           animation: check-anim 500ms;
   width: 75px;
+}
+
+.menu__part__card .card:hover .check i {
+  -webkit-animation: icon-anim 600ms normal;
+          animation: icon-anim 600ms normal;
 }
 
 .subsection {
