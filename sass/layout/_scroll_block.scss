@@ -1,0 +1,22 @@
+header + section + footer + main {
+  &.menu__part {
+    opacity: 0;
+    transform-origin: 50% 0%;
+    animation: scroll-apparition 500ms linear forwards;
+  }
+}
+
+@keyframes scroll-apparition {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scaleX(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
