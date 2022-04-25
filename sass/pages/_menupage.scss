@@ -52,15 +52,37 @@
 
       .card {
         margin: 8px 0;
-        padding: 12px;
-        flex-direction: column;
-        gap: 10px;
-      }
-      .subtitle {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
+        overflow: hidden;
+
+        &__title {
+          display: flex;
+          flex-direction: column;
+          margin: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%;
+        }
+
+        .subtitle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          overflow: hidden;
+
+          span {
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+        &:hover {
+          .check {
+            animation: check-anim 500ms;
+            width: 75px;
+            i {
+              animation: icon-anim 600ms normal;
+            }
+          }
+        }
       }
     }
   }
