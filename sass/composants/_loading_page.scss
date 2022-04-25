@@ -4,7 +4,6 @@
   position: fixed;
   top: 50%;
   left: 50%;
-
   opacity: 1;
 }
 .loader {
@@ -20,7 +19,7 @@
 .loader-inner {
   border-top-color: $colour-tertiary;
   border-bottom-color: $colour-btn;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes rotate {

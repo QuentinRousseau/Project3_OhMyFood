@@ -180,8 +180,8 @@ a:visited {
 .loader-inner {
   border-top-color: #99e2d0;
   border-bottom-color: linear-gradient(#9356dc, #ff79da);
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 @-webkit-keyframes rotate {
@@ -438,10 +438,22 @@ footer img {
   }
 }
 
-header + section + footer + main.menu__part {
+.card {
   opacity: 0;
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: scroll-apparition 500ms linear forwards;
+          animation: scroll-apparition 500ms linear forwards;
+}
+
+.menu__part {
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
   -webkit-animation: scroll-apparition 500ms linear forwards;
           animation: scroll-apparition 500ms linear forwards;
 }
@@ -449,36 +461,42 @@ header + section + footer + main.menu__part {
 @-webkit-keyframes scroll-apparition {
   0% {
     opacity: 0;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    height: 0%;
   }
   50% {
+    height: 50%;
     opacity: 0.5;
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5);
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
   }
   100% {
+    height: 100%;
     opacity: 1;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 
 @keyframes scroll-apparition {
   0% {
     opacity: 0;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    height: 0%;
   }
   50% {
+    height: 50%;
     opacity: 0.5;
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5);
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
   }
   100% {
+    height: 100%;
     opacity: 1;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 
