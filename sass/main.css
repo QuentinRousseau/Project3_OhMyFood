@@ -652,6 +652,16 @@ footer img {
   margin-bottom: 40px;
 }
 
+@media all and (min-width: 768px) {
+  .operation h2 {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .operation__list {
   background-color: #f8f8f8;
 }
@@ -679,8 +689,18 @@ footer img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 15px;
-  padding-bottom: 16px;
+  padding-bottom: 36px;
   background: #f8f8f8;
+}
+
+@media all and (min-width: 768px) {
+  .restaurants h2 {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .restaurants a {

@@ -32,6 +32,9 @@
 /* operation list, icons & title*/
 
 .operation {
+  & h2 {
+    @include desktop-center;
+  }
   counter-reset: number;
   display: grid;
   gap: 20px;
@@ -57,11 +60,14 @@
 // restaurant's list
 
 .restaurants {
+  & h2 {
+    @include desktop-center;
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  padding-bottom: 16px;
+  padding-bottom: 36px;
   background: $colour-background-menu;
   a {
     color: black;
