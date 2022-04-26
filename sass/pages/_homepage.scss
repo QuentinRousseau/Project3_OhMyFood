@@ -36,7 +36,9 @@
   display: grid;
   gap: 20px;
   margin-bottom: 40px;
+
   &__list {
+    background-color: $colour-background-menu;
     @extend %operation-list;
     &--3 {
       background-color: lighten($colour-primary, 35%);
@@ -59,7 +61,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+  background: $colour-background-menu;
   a {
     color: black;
   }

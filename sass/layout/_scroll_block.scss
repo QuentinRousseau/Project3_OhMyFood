@@ -2,18 +2,18 @@
   opacity: 0;
   transform-origin: 0% 0%;
 
-  animation: scroll-apparition 1s 1.3s linear forwards;
+  animation: scroll-apparition 1s 2s linear forwards;
 }
 .menu__part {
   opacity: 0;
   transform-origin: 0% 0%;
   animation: scroll-apparition 500ms 1s linear forwards;
 }
-section {
+/*section {
   opacity: 0;
   transform-origin: 0% 0%;
   animation: scroll-apparition 1s 2s linear forwards;
-}
+}*/
 @keyframes scroll-apparition {
   0% {
     opacity: 0;
