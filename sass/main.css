@@ -498,38 +498,33 @@ footer img {
   opacity: 0;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 500ms 0.5s linear alternate forwards;
-          animation: scroll-apparition 500ms 0.5s linear alternate forwards;
+  -webkit-animation: scroll-apparition 500ms 0.5s linear forwards;
+          animation: scroll-apparition 500ms 0.5s linear forwards;
 }
 
 .menu__part--2 {
   opacity: 0;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 500ms 1s linear alternate forwards;
-          animation: scroll-apparition 500ms 1s linear alternate forwards;
+  -webkit-animation: scroll-apparition 500ms 1s linear forwards;
+          animation: scroll-apparition 500ms 1s linear forwards;
 }
 
 .menu__part--3 {
   opacity: 0;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 500ms 1.5s linear alternate forwards;
-          animation: scroll-apparition 500ms 1.5s linear alternate forwards;
+  -webkit-animation: scroll-apparition 500ms 1.5s linear forwards;
+          animation: scroll-apparition 500ms 1.5s linear forwards;
 }
 
 .card {
   -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
-  -webkit-animation: scroll-apparition 500ms 2.2s linear forwards;
-          animation: scroll-apparition 500ms 2.2s linear forwards;
+  -webkit-animation: scroll-card 500ms 2.2s linear forwards;
+          animation: scroll-card 500ms 2.2s linear forwards;
 }
 
-/*section {
-  opacity: 0;
-  transform-origin: 0% 0%;
-  animation: scroll-apparition 1s 2s linear forwards;
-}*/
 @-webkit-keyframes scroll-apparition {
   0% {
     -webkit-transform: translateY(35px);
@@ -546,6 +541,7 @@ footer img {
             transform: translateY(0);
   }
 }
+
 @keyframes scroll-apparition {
   0% {
     -webkit-transform: translateY(35px);
@@ -560,6 +556,36 @@ footer img {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes scroll-card {
+  0% {
+    -webkit-transform: translatey(-35px);
+            transform: translatey(-35px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes scroll-card {
+  0% {
+    -webkit-transform: translatey(-35px);
+            transform: translatey(-35px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
