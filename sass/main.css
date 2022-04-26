@@ -525,11 +525,6 @@ footer img {
           animation: scroll-card 500ms 2.2s linear forwards;
 }
 
-/*section {
-  opacity: 0;
-  transform-origin: 0% 0%;
-  animation: scroll-apparition 1s 2s linear forwards;
-}*/
 @-webkit-keyframes scroll-apparition {
   0% {
     -webkit-transform: translateY(35px);
@@ -546,6 +541,7 @@ footer img {
             transform: translateY(0);
   }
 }
+
 @keyframes scroll-apparition {
   0% {
     -webkit-transform: translateY(35px);
