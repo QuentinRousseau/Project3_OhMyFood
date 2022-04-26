@@ -139,20 +139,52 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
   width: 330px;
   border-radius: 20px;
   background: white;
   -webkit-box-shadow: 0px 0px 2px lightgrey;
           box-shadow: 0px 0px 2px lightgrey;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: scroll-apparition 1s 2s linear forwards;
+          animation: scroll-apparition 1s 2s linear forwards;
+  -webkit-transform: 400ms;
+          transform: 400ms;
 }
 
 .card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 400ms;
-  transition: 400ms;
+  opacity: 1;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-box-shadow: 0px 0px 11px lightgray;
           box-shadow: 0px 0px 11px lightgray;
+}
+
+@-webkit-keyframes increase {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    scale: 0;
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes increase {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    scale: 0;
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 .loading_page {
@@ -174,8 +206,8 @@ a:visited {
   height: 100px;
   width: 100px;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 45%;
   opacity: 1;
 }
 
@@ -243,6 +275,7 @@ a:visited {
     opacity: 0.5;
   }
   100% {
+    z-index: 0;
     opacity: 0;
   }
 }
@@ -255,6 +288,7 @@ a:visited {
     opacity: 0.5;
   }
   100% {
+    z-index: 0;
     opacity: 0;
   }
 }
@@ -477,20 +511,12 @@ footer img {
   }
 }
 
-.card {
-  opacity: 0;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 1s 2s linear forwards;
-          animation: scroll-apparition 1s 2s linear forwards;
-}
-
 .menu__part {
   opacity: 0;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 500ms 1s linear forwards;
-          animation: scroll-apparition 500ms 1s linear forwards;
+  -webkit-animation: scroll-apparition 1s 1s linear forwards;
+          animation: scroll-apparition 1s 1s linear forwards;
 }
 
 /*section {
