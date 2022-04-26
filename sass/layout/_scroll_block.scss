@@ -23,11 +23,11 @@
 
 @keyframes scroll-apparition {
   0% {
-    transform: translateY(35px);
+    transform: translateY(-35px);
   }
   50% {
     opacity: 0.5;
-    transform: translateY(15px);
+    transform: translateY(-15px);
   }
   100% {
     opacity: 1;
