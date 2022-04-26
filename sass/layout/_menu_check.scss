@@ -22,16 +22,12 @@
   }
 }
 @keyframes check-anim {
-  0% {
+  from {
     transform: scaleX(0);
     width: 0%;
   }
 
-  50% {
-    transform: scaleX(0.5);
-    width: 37px;
-  }
-  100% {
+  to {
     transform: scaleX(1);
     opacity: 1;
     width: 75px;
