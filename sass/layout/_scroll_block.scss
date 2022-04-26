@@ -2,23 +2,23 @@
   &--1 {
     opacity: 0;
     transform-origin: 0% 0%;
-    animation: scroll-apparition 500ms 0.5s linear alternate forwards;
+    animation: scroll-apparition 500ms 0.5s linear forwards;
   }
   &--2 {
     opacity: 0;
     transform-origin: 0% 0%;
-    animation: scroll-apparition 500ms 1s linear alternate forwards;
+    animation: scroll-apparition 500ms 1s linear forwards;
   }
 
   &--3 {
     opacity: 0;
     transform-origin: 0% 0%;
-    animation: scroll-apparition 500ms 1.5s linear alternate forwards;
+    animation: scroll-apparition 500ms 1.5s linear forwards;
   }
 }
 .card {
   transform-origin: 100% 100%;
-  animation: scroll-apparition 500ms 2.2s linear forwards;
+  animation: scroll-card 500ms 2.2s linear forwards;
 }
 
 /*section {
@@ -37,5 +37,17 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes scroll-card {
+  0% {
+    transform: translatey(-35px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
