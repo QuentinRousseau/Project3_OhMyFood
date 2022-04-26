@@ -1,16 +1,13 @@
-.card {
-  opacity: 0;
-  animation-delay: 2s;
-  transform-origin: 0% 0%;
-  animation: scroll-apparition 500ms linear forwards;
-}
 .menu__part {
   opacity: 0;
-  animation-delay: 1s;
   transform-origin: 0% 0%;
-  animation: scroll-apparition 500ms linear forwards;
+  animation: scroll-apparition 1s 1s linear forwards;
 }
-
+/*section {
+  opacity: 0;
+  transform-origin: 0% 0%;
+  animation: scroll-apparition 1s 2s linear forwards;
+}*/
 @keyframes scroll-apparition {
   0% {
     opacity: 0;

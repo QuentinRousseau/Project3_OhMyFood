@@ -139,32 +139,79 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
   width: 330px;
   border-radius: 20px;
   background: white;
   -webkit-box-shadow: 0px 0px 2px lightgrey;
           box-shadow: 0px 0px 2px lightgrey;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: scroll-apparition 1s 2s linear forwards;
+          animation: scroll-apparition 1s 2s linear forwards;
+  -webkit-transform: 400ms;
+          transform: 400ms;
 }
 
 .card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 400ms;
-  transition: 400ms;
+  opacity: 1;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-box-shadow: 0px 0px 11px lightgray;
           box-shadow: 0px 0px 11px lightgray;
 }
 
-.loader-wrapper {
+@-webkit-keyframes increase {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    scale: 0;
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes increase {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    scale: 0;
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.loading_page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 1643px;
+  opacity: 1;
+  -webkit-animation: disappears 3s linear forwards;
+          animation: disappears 3s linear forwards;
+  z-index: 1;
+}
+
+.loading_page .loader-wrapper {
   height: 100px;
   width: 100px;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 45%;
   opacity: 1;
 }
 
-.loader {
+.loading_page .loader-wrapper .loader {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -173,11 +220,11 @@ a:visited {
   border-top-color: #9356dc;
   border-bottom-color: #ff79da;
   border-radius: 50%;
-  -webkit-animation: rotate 3s linear both;
-          animation: rotate 3s linear both;
+  -webkit-animation: rotate 2.5s linear both;
+          animation: rotate 2.5s linear both;
 }
 
-.loader-inner {
+.loading_page .loader-wrapper .loader .loader-inner {
   border-top-color: #99e2d0;
   border-bottom-color: linear-gradient(#9356dc, #ff79da);
   -webkit-animation-duration: 2s;
@@ -217,6 +264,32 @@ a:visited {
     opacity: 0;
     -webkit-transform: scale(1) rotate(360deg);
             transform: scale(1) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes disappears {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes disappears {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
   }
 }
 
@@ -438,26 +511,19 @@ footer img {
   }
 }
 
-.card {
-  opacity: 0;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 500ms linear forwards;
-          animation: scroll-apparition 500ms linear forwards;
-}
-
 .menu__part {
   opacity: 0;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 500ms linear forwards;
-          animation: scroll-apparition 500ms linear forwards;
+  -webkit-animation: scroll-apparition 1s 1s linear forwards;
+          animation: scroll-apparition 1s 1s linear forwards;
 }
 
+/*section {
+  opacity: 0;
+  transform-origin: 0% 0%;
+  animation: scroll-apparition 1s 2s linear forwards;
+}*/
 @-webkit-keyframes scroll-apparition {
   0% {
     opacity: 0;
@@ -478,7 +544,6 @@ footer img {
             transform: scaleY(1);
   }
 }
-
 @keyframes scroll-apparition {
   0% {
     opacity: 0;
@@ -563,6 +628,10 @@ footer img {
   margin-bottom: 40px;
 }
 
+.operation__list {
+  background-color: #f8f8f8;
+}
+
 .operation__list--3 {
   background-color: #f2eafb;
 }
@@ -586,7 +655,8 @@ footer img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 15px;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+  background: #f8f8f8;
 }
 
 .restaurants a {
