@@ -527,13 +527,13 @@ footer img {
 
 @-webkit-keyframes scroll-apparition {
   0% {
-    -webkit-transform: translateY(35px);
-            transform: translateY(35px);
+    -webkit-transform: translateY(-35px);
+            transform: translateY(-35px);
   }
   50% {
     opacity: 0.5;
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   100% {
     opacity: 1;
@@ -544,13 +544,13 @@ footer img {
 
 @keyframes scroll-apparition {
   0% {
-    -webkit-transform: translateY(35px);
-            transform: translateY(35px);
+    -webkit-transform: translateY(-35px);
+            transform: translateY(-35px);
   }
   50% {
     opacity: 0.5;
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   100% {
     opacity: 1;
