@@ -1,24 +1,14 @@
 .card {
   display: flex;
-  opacity: 0;
-  width: 330px;
+  width: 310px;
   border-radius: 20px;
   background: white;
   box-shadow: 0px 0px 2px lightgrey;
-  transform-origin: initial !important;
-  transition: 600ms;
+  transform-origin: initial;
+  transition: all linear 600ms;
+
   &:hover {
-    opacity: 1;
-    //animation: increase 400ms linear forwards;
-    transform: scale(1.1) !important;
-    box-shadow: 0px 0px 11px lightgray;
-  }
-}
-@keyframes increase {
-  from {
-    transform: scale(1);
-  }
-  to {
     transform: scale(1.1);
+    box-shadow: 0px 0px 11px gray;
   }
 }
