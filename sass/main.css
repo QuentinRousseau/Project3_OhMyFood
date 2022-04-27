@@ -139,46 +139,22 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  opacity: 0;
-  width: 330px;
+  width: 310px;
   border-radius: 20px;
   background: white;
   -webkit-box-shadow: 0px 0px 2px lightgrey;
           box-shadow: 0px 0px 2px lightgrey;
-  -webkit-transform-origin: initial !important;
-          transform-origin: initial !important;
-  -webkit-transition: 600ms;
-  transition: 600ms;
+  -webkit-transform-origin: initial;
+          transform-origin: initial;
+  -webkit-transition: all linear 600ms;
+  transition: all linear 600ms;
 }
 
 .card:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.1) !important;
-          transform: scale(1.1) !important;
-  -webkit-box-shadow: 0px 0px 11px lightgray;
-          box-shadow: 0px 0px 11px lightgray;
-}
-
-@-webkit-keyframes increase {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-@keyframes increase {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 11px gray;
+          box-shadow: 0px 0px 11px gray;
 }
 
 .loading_page {
@@ -213,8 +189,8 @@ a:visited {
   border-top-color: #9356dc;
   border-bottom-color: #ff79da;
   border-radius: 50%;
-  -webkit-animation: rotate 2.5s linear both;
-          animation: rotate 2.5s linear both;
+  -webkit-animation: rotate 3.5s linear both;
+          animation: rotate 3.5s linear both;
 }
 
 .loading_page .loader-wrapper .loader .loader-inner {
@@ -231,7 +207,6 @@ a:visited {
             transform: scale(1) rotate(360deg);
   }
   50% {
-    opacity: 0.5;
     -webkit-transform: scale(0.8) rotate(-360deg);
             transform: scale(0.8) rotate(-360deg);
   }
@@ -249,7 +224,6 @@ a:visited {
             transform: scale(1) rotate(360deg);
   }
   50% {
-    opacity: 0.5;
     -webkit-transform: scale(0.8) rotate(-360deg);
             transform: scale(0.8) rotate(-360deg);
   }
@@ -264,8 +238,8 @@ a:visited {
   0% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.5;
+  80% {
+    opacity: 1;
   }
   100% {
     z-index: -1;
@@ -277,8 +251,8 @@ a:visited {
   0% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.5;
+  80% {
+    opacity: 1;
   }
   100% {
     z-index: -1;
@@ -506,34 +480,27 @@ footer img {
   opacity: 0;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 500ms 1s linear forwards;
-          animation: scroll-apparition 500ms 1s linear forwards;
+  -webkit-animation: scroll-apparition 500ms 1.5s linear forwards;
+          animation: scroll-apparition 500ms 1.5s linear forwards;
 }
 
 .menu__part--3 {
   opacity: 0;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
-  -webkit-animation: scroll-apparition 500ms 1.5s linear forwards;
-          animation: scroll-apparition 500ms 1.5s linear forwards;
-}
-
-.card {
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  -webkit-animation: scroll-card 500ms 2.2s linear forwards;
-          animation: scroll-card 500ms 2.2s linear forwards;
+  -webkit-animation: scroll-apparition 500ms 2.5s linear forwards;
+          animation: scroll-apparition 500ms 2.5s linear forwards;
 }
 
 @-webkit-keyframes scroll-apparition {
   0% {
-    -webkit-transform: translateY(-35px);
-            transform: translateY(-35px);
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px);
   }
   50% {
     opacity: 0.5;
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
   100% {
     opacity: 1;
@@ -544,48 +511,18 @@ footer img {
 
 @keyframes scroll-apparition {
   0% {
-    -webkit-transform: translateY(-35px);
-            transform: translateY(-35px);
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px);
   }
   50% {
     opacity: 0.5;
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes scroll-card {
-  0% {
-    -webkit-transform: translatey(35px);
-            transform: translatey(35px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes scroll-card {
-  0% {
-    -webkit-transform: translatey(35px);
-            transform: translatey(35px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
   }
 }
 
@@ -654,8 +591,6 @@ footer img {
 
 @media all and (min-width: 768px) {
   .operation h2 {
-    -webkit-transition: 1s;
-    transition: 1s;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -695,8 +630,6 @@ footer img {
 
 @media all and (min-width: 768px) {
   .restaurants h2 {
-    -webkit-transition: 1s;
-    transition: 1s;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

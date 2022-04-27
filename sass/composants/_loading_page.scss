@@ -25,7 +25,7 @@
       border-top-color: $colour-primary;
       border-bottom-color: $colour-secondary;
       border-radius: 50%;
-      animation: rotate 2.5s linear both;
+      animation: rotate 3.5s linear both;
       .loader-inner {
         border-top-color: $colour-tertiary;
         border-bottom-color: $colour-background-footer;
@@ -42,9 +42,9 @@
     transform: scale(1) rotate(360deg);
   }
   50% {
-    opacity: 0.5;
     transform: scale(0.8) rotate(-360deg);
   }
+
   100% {
     opacity: 0;
 
@@ -55,8 +55,8 @@
   0% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.5;
+  80% {
+    opacity: 1;
   }
   100% {
     z-index: -1;

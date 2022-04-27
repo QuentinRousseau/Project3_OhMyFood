@@ -7,42 +7,26 @@
   &--2 {
     opacity: 0;
     transform-origin: 0% 0%;
-    animation: scroll-apparition 500ms 1s linear forwards;
+    animation: scroll-apparition 500ms 1.5s linear forwards;
   }
 
   &--3 {
     opacity: 0;
     transform-origin: 0% 0%;
-    animation: scroll-apparition 500ms 1.5s linear forwards;
+    animation: scroll-apparition 500ms 2.5s linear forwards;
   }
-}
-.card {
-  transform-origin: 100% 100%;
-  animation: scroll-card 500ms 2.2s linear forwards;
 }
 
 @keyframes scroll-apparition {
   0% {
-    transform: translateY(-35px);
+    transform: translateY(35px);
   }
   50% {
     opacity: 0.5;
-    transform: translateY(-15px);
+    transform: translateY(15px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@keyframes scroll-card {
-  0% {
-    transform: translatey(35px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }
