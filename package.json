@@ -1,0 +1,22 @@
+{
+  "name": "project3_ohmyfood",
+  "version": "1.0.0",
+  "description": "project of openclassromms ",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinRousseau/Project3_OhMyFood.git"
+  },
+  "author": "rousseau quentin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuentinRousseau/Project3_OhMyFood/issues"
+  },
+  "homepage": "https://github.com/QuentinRousseau/Project3_OhMyFood#readme"
+}
