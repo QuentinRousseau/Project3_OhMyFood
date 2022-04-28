@@ -1,13 +1,18 @@
 .menu__part {
-  & > * {
+  &--1 {
     opacity: 0;
     transform-origin: 0% 0%;
-    animation: scroll-apparition 500ms 0.5s ease both;
-    @for $i from 1 through 10 {
-      &:nth-child(#{$i}) {
-        animation-delay: calc($i * 1.5s);
-      }
-    }
+    animation: scroll-apparition 700ms 1s ease both;
+  }
+  &--2 {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    animation: scroll-apparition 700ms 1.5s ease both;
+  }
+  &--3 {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    animation: scroll-apparition 700ms 2s ease both;
   }
 }
 
