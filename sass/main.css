@@ -49,6 +49,7 @@
 body {
   font-family: "Roboto";
   min-width: 220px;
+  margin: 0;
   text-align: center;
 }
 
@@ -448,7 +449,6 @@ footer .footer__list {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  width: 100%;
 }
 
 footer .footer__list .list {
@@ -469,6 +469,14 @@ footer img {
   width: 100px;
   -webkit-filter: brightness(20);
           filter: brightness(20);
+}
+
+@media all and (min-width: 768px) {
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 /* import of page files */
