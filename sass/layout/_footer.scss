@@ -14,7 +14,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+
     .list {
       display: flex;
       gap: 8px;
@@ -28,5 +28,8 @@ footer {
     height: 17px;
     width: 100px;
     filter: brightness(20);
+  }
+  @media all and (min-width: 768px) {
+    align-items: center;
   }
 }
