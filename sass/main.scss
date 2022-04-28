@@ -15,17 +15,17 @@
 
 @import "composants/button";
 @import "composants/card";
+@import "composants/icons-anim";
 @import "composants/loading_page";
+@import "composants/menu_check";
 
 /* import of layout files */
 
 @import "layout/header";
 @import "layout/footer";
-@import "layout/icons-anim";
-@import "layout/menu_check";
-@import "layout/scroll_block";
 
 /* import of page files */
 
 @import "pages/homepage";
 @import "pages/menupage";
+@import "pages/scroll_block";

@@ -3,8 +3,8 @@ $colour-secondary: #ff79da;
 $colour-tertiary: #99e2d0;
 $colour-background-menu: rgb(248, 248, 248);
 $colour-background-footer: dimgray;
-$colour-btn: linear-gradient($colour-primary, $colour-secondary);
-$colour-btn-light: linear-gradient(
-  lighten($colour-primary, 10%),
-  lighten($colour-secondary, 10%)
+$gradient-btn: linear-gradient($colour-secondary, $colour-primary);
+$gradient-btn-light: linear-gradient(
+  lighten($colour-secondary, 10%),
+  lighten($colour-primary, 10%)
 );

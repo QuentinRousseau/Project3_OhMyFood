@@ -1,0 +1,23 @@
+.menu__part {
+  & > * {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    animation: scroll-apparition 500ms 0.5s ease both;
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: calc($i * 1.5s);
+      }
+    }
+  }
+}
+
+@keyframes scroll-apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
