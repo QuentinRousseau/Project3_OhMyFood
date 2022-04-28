@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "test"
+    "sass": "sass --watch ./sass/main.scss:.public/css/main.css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/QuentinRousseau/Project3_OhMyFood/issues"
   },
-  "homepage": "https://github.com/QuentinRousseau/Project3_OhMyFood#readme"
+  "homepage": "https://github.com/QuentinRousseau/Project3_OhMyFood#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
