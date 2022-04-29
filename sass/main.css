@@ -432,7 +432,7 @@ footer img {
   flex-wrap: wrap;
   gap: 35px;
 }
-@media all and (max-width: 678px) {
+@media all and (max-width: 768px) {
   .menu__part {
     width: 100%;
     padding: 0;
@@ -458,7 +458,7 @@ footer img {
   text-align: start;
   gap: 15px;
 }
-@media all and (max-width: 678px) {
+@media all and (max-width: 768px) {
   .menu__part__card {
     width: 100%;
   }
@@ -467,7 +467,7 @@ footer img {
   margin: 8px 0;
   overflow: hidden;
 }
-@media all and (max-width: 678px) {
+@media all and (max-width: 768px) {
   .menu__part__card .card {
     width: 100%;
   }
