@@ -762,6 +762,15 @@ footer img {
   width: 100%;
 }
 
+.menu__part__card .card__title .title {
+  white-space: nowrap;
+}
+
+.menu__part__card .card__title .title h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .menu__part__card .card .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,6 +782,7 @@ footer img {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  gap: 5px;
 }
 
 .menu__part__card .card .subtitle span {

@@ -73,6 +73,13 @@
           white-space: nowrap;
           overflow: hidden;
           width: 100%;
+          & .title {
+            white-space: nowrap;
+            h3 {
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+          }
         }
 
         .subtitle {
@@ -80,6 +87,7 @@
           justify-content: space-between;
           align-items: center;
           overflow: hidden;
+          gap: 5px;
 
           span {
             text-overflow: ellipsis;
